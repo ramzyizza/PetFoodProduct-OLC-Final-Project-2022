@@ -1,10 +1,15 @@
 
+h1,h2,h3,h4,h5,h6{
+    color: #1b222b;
+}
+
 body{
     font-family: 'Ubuntu', sans-serif;
     text-align: left;
+    color: #1b222b;
 }
 
-/* NAVBAR */
+/* Navbar Section */
 .brand{
     font-family: 'Nouvelle Vague', sans-serif;
     font-size: 2rem;
@@ -49,11 +54,17 @@ body{
     font-size: 22px;
 }
 
-/* HERO */
+/* Hero Section*/
+
+@media(min-width:992px){
+    .col-lg-6, .col-md-6{
+        height: 650px;
+    }
+}
 
 .hero-section{
     background-color: #ffeeda;
-    padding: 7%
+    padding: 7% 7% 0 7%;
 }
 
 .header-hero{
@@ -62,7 +73,7 @@ body{
 }
 
 #product-photo{
-    padding: 3rem;
+    padding: 3rem 4rem;
     position: relative;
     bottom: 7rem;
 }
@@ -76,11 +87,97 @@ body{
 .btn-dark{
     border-radius: 100px;
     padding: 2.5% 6%;
+    margin: 5% 0;
+}
+
+.btn{
+    width: 10rem;
+    height: 4rem;
+    padding: 0px;
 }
 
 .icofont-arrow-right{
     transform: rotate(-45deg);
 }
+
+/* Brand Testimonials Section */
+
+.brand-testi-image{
+    background-color: white;
+}
+
+.heading-testimonial{
+    text-align: center;
+    padding: 3rem 2rem 1rem 2rem;
+}
+
+.brand-image-items{
+    width: 6rem;
+    margin: 3rem 3rem 3rem 6rem;
+}
+
+.brand-row{
+    width: 90%;
+}
+
+#beco-logo{
+    position: relative;
+    bottom: 25px;
+}
+
+/* Subscription Section */
+
+.subscription{
+    padding: 3% 7% 0 7%;
+}
+
+.subscription-heading{
+    font-weight: 700;
+    font-size: 58px;
+}
+
+.subsciption-photo{
+    width: 120%;
+    position: relative;
+    bottom: 30px;
+}
+
+.subscription-text{
+    color: #968e85;
+}
+
+.ol-subscription{
+    border-radius: 100px;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.ol-subscription:hover{
+    background-color: #ddede6;
+    color: #3a6e5a;
+    border-color: #ddede6;
+}
+
+.subscription.col-lg-6{
+    height: 95%;
+    padding: 0 10% 1% 0;
+}
+
+.ol-text-subscription{
+    font-size: 1.75rem;
+    margin: 6% 0;
+}
+
+.ol-par-subs{
+    color: #968e85;
+}
+
+.ol-subs.col-lg-4.col-md-4{
+    padding: 0px 10px 0px 0px;
+}
+
 
 /* Mobile Responsive */
 @media(max-width:768px){
@@ -109,17 +206,113 @@ body{
     }
 
     #product-photo{
-        width: 90%;
+        width: 80%;
+        padding-top: 10px;
         position: relative;
-        top: 1rem;
+        top: 1px;
+    }
+
+    .brand-image-items{
+        width: 8rem;
+        margin: 3rem 1.5rem 3rem 35%;
+        padding: 0px;
+    }
+
+    .col-sm-6{
+        width: 50%;
+    }
+
+    #beco-logo{
+        position: relative;
+        bottom: 50px;
+    }
+
+    .subscription{
+        padding: 0 7% 0 7%;
+    }
+
+    .subscription-heading{
+        font-weight: 700;
+        font-size: 48px;
+        padding: 0px;
+    }
+
+    .subsciption-photo{
+        width: 80%;
+        position: relative;
+        top: 5%;
+    }
+
+    .subs-button{
+        margin: 1%;
+    }
+
+    .subscription.col-lg-6{
+        height: 95%;
+        padding: 0 10% 10% 10%;
+    }
+    
+}
+
+/* Tablet Responsive */
+
+@media(min-width: 768px) and (max-width:992px){
+    #product-photo{
+        width: 32rem;
+        position: relative;
+        bottom: 3rem;
+        right: 3rem;
+    }
+    
+    nav{
+        text-align: center;
+    }
+
+    .vr{
+        display: none;
+    }
+
+    .social-media-items{
+        padding: 0.5rem;
+        margin: 0.75rem;
+        border-radius: 30%;
+        font-size: 18px;
     }
 
     .btn{
-        width: 10rem;
-        height: 4rem;
+        width: 10.2rem;
+        height: 4.2rem;
         padding: 0px;
     }
+
+    .header-hero{
+        font-weight: 900;
+        font-size: 60px;
+    }
+
+    .text-hero{
+        font-size: 1rem;
+    }
+
+    .brand-image-items{
+        width: 8rem;
+        margin: 3rem 50% 3rem 50%;
+        padding: 0px;
+    }
+
+    .subsciption-photo{
+        width: 100%;
+        margin-left: 15%;
+        position: relative;
+        bottom: 10%;
+    }
+
+    .ol-subscription{
+        border-radius: 100px;
+        width: 3rem;
+        height: 3rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
 }
-
-
-
