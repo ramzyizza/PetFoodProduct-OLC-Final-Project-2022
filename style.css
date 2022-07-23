@@ -112,8 +112,14 @@ body{
 }
 
 .brand-image-items{
+    transition: 500ms;
     width: 6rem;
     margin: 3rem 3rem 3rem 6rem;
+}
+
+.brand-image-items:hover{
+    transition: 500ms;
+    width: 6.5rem;
 }
 
 .brand-row{
@@ -179,6 +185,74 @@ body{
 }
 
 
+/* Top Seller Section */
+
+.top-seller-section{
+    text-align: center;
+    padding: 3% 7% 10% 7%;
+}
+
+.shop-now.btn-light{
+    padding: 10px;
+    height: auto;
+    border-radius: 10px;
+    align-self: center;
+    position: relative;
+    top: 10%;
+
+}
+
+.top-seller-heading{
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.card-text{
+    margin: 3% 10%;
+    color:#6f6f6f;
+}
+
+.card-title{
+    font-weight: 900;
+    font-size: 28px;
+}
+
+.card-img-top{
+    transition: 500ms;
+    width: 55%;
+    margin: 10px 10px 5px 10px;
+    align-self: center;
+}
+
+.card-img-top:hover{
+    transition: 500ms;
+    width: 56%;
+}
+
+.green.card.h-100{
+    background-color: #deede6;
+    border-style: none;
+    border-radius: 15px;
+}
+
+.yellow.card.h-100{
+    background-color: #ffeeda;
+    border-style: none;
+    border-radius: 15px;
+}
+
+.blue.card.h-100{
+    background-color: #bde5fe;
+    border-style: none;
+    border-radius: 15px;
+}
+
+.h-100{
+    margin: 2rem 0.7rem;
+}
+
+
+
 /* Mobile Responsive */
 @media(max-width:768px){
     body{
@@ -216,6 +290,11 @@ body{
         width: 8rem;
         margin: 3rem 1.5rem 3rem 35%;
         padding: 0px;
+    }
+    
+    .brand-image-items:hover{
+        transition: 500ms;
+        width: 8.5rem;
     }
 
     .col-sm-6{
@@ -300,6 +379,11 @@ body{
         padding: 0px;
     }
 
+    .brand-image-items:hover{
+        transition: 500ms;
+        width: 8.5rem;
+    }
+
     .subsciption-photo{
         width: 100%;
         margin-left: 15%;
@@ -315,4 +399,16 @@ body{
         font-weight: bold;
     }
 
+    .blue.card.h-100{
+        position: relative;
+        left: 55%;
+    }
+}
+
+/* Small Tablet Responsive */
+@media(min-width:576px) and (max-width:767px){
+    .blue.card.h-100{
+        position: relative;
+        left: 55%;
+    }
 }
