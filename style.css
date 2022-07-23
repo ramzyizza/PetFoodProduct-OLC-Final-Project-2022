@@ -1,0 +1,125 @@
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    text-align: left;
+}
+
+/* NAVBAR */
+.brand{
+    font-family: 'Nouvelle Vague', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1b222b;
+    margin: 0.1rem 5rem 0.1rem 4.5rem;
+}
+
+.nav-item{
+    margin: 0 0.5rem;
+    color: #968e85;
+}
+
+.nav-item:hover{
+    transition: 500ms;
+    color: black;
+    font-weight: bolder;
+}
+
+.icofont-cat-alt-3{
+    color: #1b222b;
+    margin: 00.5rem;
+}
+
+.social-media{
+    margin: 0.1rem 5rem;
+}
+
+.social-media-items{
+    padding: 0.5rem;
+    margin: 0.25rem;
+    border-radius: 30%;
+    font-size: 18px;
+}
+
+.social-media-items:hover{
+    background-color: #e8eae9;
+    transition: 300ms;
+}
+
+.icofont-cart{
+    font-size: 22px;
+}
+
+/* HERO */
+
+.hero-section{
+    background-color: #ffeeda;
+    padding: 7%
+}
+
+.header-hero{
+    font-weight: 900;
+    font-size: 72px;
+}
+
+#product-photo{
+    padding: 3rem;
+    position: relative;
+    bottom: 7rem;
+}
+
+.text-hero{
+    color: #968e85;
+    width: 80%;
+    margin: 2rem 0.5rem;
+}
+
+.btn-dark{
+    border-radius: 100px;
+    padding: 2.5% 6%;
+}
+
+.icofont-arrow-right{
+    transform: rotate(-45deg);
+}
+
+/* Mobile Responsive */
+@media(max-width:768px){
+    body{
+        text-align: center;
+    }
+
+    .vr{
+        display: none;
+    }
+
+    .social-media-items{
+        padding: 0.5rem;
+        margin: 0.75rem;
+        border-radius: 30%;
+        font-size: 18px;
+    }
+
+    .header-hero{
+        font-weight: 900;
+        font-size: 64px;
+    }
+
+    .text-hero{
+        margin: 5% 0% 5% 10%;
+    }
+
+    #product-photo{
+        width: 90%;
+        position: relative;
+        top: 1rem;
+    }
+
+    .btn{
+        width: 10rem;
+        height: 4rem;
+        padding: 0px;
+    }
+}
+
+
+
